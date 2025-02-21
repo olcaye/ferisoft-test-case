@@ -1,0 +1,9 @@
+services:
+  db:
+    image: mysql:8.1
+    container_name: fs
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+    ports:
+      - "3307:3306"
